@@ -1,0 +1,323 @@
+/* --------------------------------------------------------------
+---------------------------GLOBAL--------------------------------
+-----------------------------------------------------------------*/
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f3eee8; 
+}
+
+h1 {
+  font-family: "Anton", sans-serif;
+  font-weight: 600px;
+  color: transparent;
+  -webkit-text-stroke: 1px #ec1d24;
+  font-size: 5.4rem;
+  text-transform: uppercase;
+  width: 450px;
+  word-wrap: break-word;
+  margin: 50px 0;
+  letter-spacing: 4px;
+}
+
+/* --------------------------------------------------------------
+---------------------------HEADER--------------------------------
+-----------------------------------------------------------------*/
+header {
+  width: 100%;
+  height: 0px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px; 
+  margin: 0 auto; 
+  position: relative;
+  z-index: 2;
+  padding: 0 10px;
+}
+
+header img {
+  height: 100px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  padding: 5px 10px;
+   /* border-bottom: 1px solid black;*/
+}
+
+.search-icon {
+  color: gray;
+  font-size: 18px;
+}
+
+.search-bar input {
+  border: none;
+  outline: none;
+  font-size: 16px;
+  margin-left: 6px;
+  width: 200px;
+  background: none;
+} 
+
+header a {
+  color: #000000; 
+  text-decoration: none;
+  font-weight: bold;
+}
+header a:hover {
+  cursor: pointer;
+  color: #ec1d24;
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+/* --------------------------------------------------------------
+---------------------------HOME----------------------------------
+-----------------------------------------------------------------*/
+
+main {
+  padding: 0 20px;
+  background-color: #f3eee8;
+}
+.hero img {
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+  filter: grayscale(100%);
+  opacity: 8%;
+}
+.hero .title {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  position: absolute;
+  top: 15%;
+  left: 10%;
+  z-index: 2;
+}
+.container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  text-decoration: none;
+  max-width: 1200px;
+  margin-top: 15px;
+}
+
+.card-content {
+  border: 2px solid black; 
+  width: calc((1200px - 120px) / 5);
+  height: 320px;
+  padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  background-color: #f3eee8; /
+}
+
+.card-content:hover {
+  transform: scale(1.12);
+  box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.325);
+}
+
+.card-content img {
+  width: 100%;
+  height: 66%;
+  object-fit: cover;
+}
+
+.card-content h3 {
+  font-family: "Anton", sans-serif;
+  font-size: 18px;
+  color: #ec1d24; 
+  /* margin: 0; */
+  text-transform: uppercase;
+  font-weight: 900;
+  padding: 0 10px;
+  letter-spacing: 1px;
+}
+
+.card-content p {
+  font-size: 14px;
+  color: black; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: wrap;
+  height: 43px;
+  padding: 0 10px;
+}
+
+.card-container a {
+  text-decoration: none;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.pagination-btn {
+  display: flex;
+  gap: 30px;
+}
+
+/* --------------------------------------------------------------
+---------------------------COMICS--------------------------------
+-----------------------------------------------------------------*/
+
+.comics-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+.comics-title > h1 {
+  margin-top: 100px;
+}
+
+.comic-item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0 10px;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  background-color: #f3eee8;
+}
+
+.comic-item:hover {
+  transform: scale(1.1);
+  box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.325);
+}
+
+.comic-item img {
+  height: 100px;
+  width: auto;
+  object-fit: cover;
+  margin-right: 15px;
+  flex-shrink: 0;
+}
+
+.comic-item h3 {
+  font-family: "Anton", sans-serif;
+  font-size: 16px;
+  color: #ec1d24;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.comic-item-content p {
+  font-size: 14px;
+  color: black;
+  margin-top: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: wrap;
+}
+
+button {
+  all: unset;
+}
+
+button:hover {
+  cursor: pointer;
+  color: #ec1d24;
+}
+
+.previous,
+.next {
+  font-size: 36px;
+}
+.display {
+  color: gray;
+} 
+
+/* --------------------------------------------------------------
+--------------------------CHARACTERS------------------------------
+-----------------------------------------------------------------*/
+
+.container > h1 {
+  margin-top: 150px;
+}
+.carousel-container {
+  width: 100%;
+  /* max-width: 1200px;   */
+  /* margin: 0 auto; */
+  position: relative;
+  overflow: hidden;
+  margin-top: 150px;
+  scroll-snap-type: x mandatory; 
+
+}
+
+.slick-slider {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.slick-track {
+  display: flex;
+
+}
+
+.slick-slide {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center; 
+  margin-right: 10px;
+}
+
+.slick-slide img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;  
+}
+
+.slick-slide:last-child {
+  margin-right: 0; 
+}
+
+.carousel-item h3 {
+  font-family: "Anton", sans-serif;
+  color: #ec1d24; 
+  margin: 10px 0 5px;
+}
+
+.carousel-item p {
+  font-size: 14px;
+  color: black;
+  margin-top: 25px;
+  text-wrap: wrap;
+  overflow: hidden;
+  text-overflow: ellipsis; 
+  white-space: nowrap; 
+
+}
