@@ -21,6 +21,12 @@ const Home = ({ search }) => {
             import.meta.env.VITE_API_URL
           }/characters?limit=${limit}&page=${page}&name=${search}`
         );
+        console.log(
+          `${
+            import.meta.env.VITE_API_URL
+          }/characters?limit=${limit}&page=${page}&name=${search}`
+        );
+
         const newData = response.data.results;
 
         setData(newData);

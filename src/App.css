@@ -84,6 +84,23 @@ header a:hover {
   gap: 10px;
 }
 
+button {
+  all: unset;
+}
+
+button:hover {
+  cursor: pointer;
+  color: #ec1d24;
+}
+
+.previous,
+.next {
+  font-size: 36px;
+}
+.display {
+  color: gray;
+} 
+
 /* --------------------------------------------------------------
 ---------------------------HOME----------------------------------
 -----------------------------------------------------------------*/
@@ -98,7 +115,7 @@ main {
   object-fit: cover;
   position: relative;
   filter: grayscale(100%);
-  opacity: 8%;
+  opacity: 10%;
 }
 .hero .title {
   max-width: 1200px;
@@ -242,22 +259,6 @@ main {
   white-space: wrap;
 }
 
-button {
-  all: unset;
-}
-
-button:hover {
-  cursor: pointer;
-  color: #ec1d24;
-}
-
-.previous,
-.next {
-  font-size: 36px;
-}
-.display {
-  color: gray;
-} 
 
 /* --------------------------------------------------------------
 --------------------------CHARACTERS------------------------------
